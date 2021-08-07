@@ -27,3 +27,4 @@ if (computerChoice < 0.31) {
  } //prints computer choice
  else {computerChoice ="P";
  window.alert("The computer chose " + computerChoice)
+}
