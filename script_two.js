@@ -15,8 +15,20 @@ alert("Computer chose " + computerChoice)
 
 // check for tie
 if (userChoice === computerChoice) {
-    ties += ties // adds one on the value of ties
+    ties ++ // adds one on the value of ties
 }
 
-// it's a tie
-// increment ties
+// check for winning condition
+// if user chose S and computer chose P
+else if (
+    userChoice === "S" && computerChoice === "P" ||
+    userChoice === "R" && computerChoice === "S" ||
+    userChoice === "P" && computerChoice === "R"
+) {
+    wins ++
+}
+// lose
+else {
+    //increment losses
+    loss ++ 
+}
