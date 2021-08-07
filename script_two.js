@@ -34,5 +34,11 @@ else {
 }
 
 // display stats
-alert("Wins: " + wins + "\nTies: " + ties + "\nLosses" loss)
+alert("Wins: " + wins + "\nTies: " + ties + "\nLosses" + loss)
 console.log(playAgain)
+
+// confirm play again
+var playAgain = confirm("Want to play again?")
+    if(playAgain) {
+        keepPlaying = false
+    }
