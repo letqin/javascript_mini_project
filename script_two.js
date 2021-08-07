@@ -32,3 +32,7 @@ else {
     //increment losses
     loss ++ 
 }
+
+// display stats
+alert("Wins: " + wins + "\nTies: " + ties + "\nLosses" loss)
+console.log(playAgain)
